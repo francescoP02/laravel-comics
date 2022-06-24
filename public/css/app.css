@@ -70,3 +70,57 @@ header .header__menu li .search:hover {
   cursor: pointer;
 }
 
+.comics {
+  background-color: #1c1c1c;
+}
+
+.comics .jumbotron {
+  height: 250px;
+  background-image: url(/img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comics .blue-btn {
+  background-color: #0282f9;
+  color: white;
+}
+
+.comics .large-btn {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  margin-left: 10.5%;
+}
+
+.comics .load-btn {
+  padding: 1rem 2rem;
+  margin: 4rem;
+}
+
+.comics__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comics__list .content {
+  width: 16.6666666667%;
+}
+
+.comics__list .content .product {
+  padding: 1rem 0.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.comics__list .content .product h4 {
+  font-size: 1rem;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 65%;
+  background-color: #1c1c1c;
+  width: calc(100% - 1rem);
+  height: calc(35% - 1rem);
+}
+

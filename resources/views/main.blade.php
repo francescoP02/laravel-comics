@@ -5,5 +5,17 @@
 @endsection
 
 @section('main_content')
-    <h1>Home</h1>
+    <section class="comics">
+        <div class="jumbotron">
+        </div>
+        <span class="large-btn blue-btn">CURRENT SERIES</span>
+        <div class="container">
+        <div class="comics__list">
+            @foreach ($comics as $comic)
+            @include('components.comic-card', $comic)
+            @endforeach
+        </div>
+        <span class="blue-btn load-btn">LOAD MORE</span>
+        </div>
+  </section>
 @endsection

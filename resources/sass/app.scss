@@ -2,6 +2,8 @@
 @import "partials/_variables";
 @import "partials/_general";
 
+// HEADER
+
 header {
     .header-top {
         background-color: $blue;
@@ -55,4 +57,65 @@ header {
           }
         }
     }
+}
+
+// MAIN
+
+// COMIC SECTION
+
+.comics {
+    background-color: #1c1c1c;
+
+    .jumbotron {
+        height: 250px;
+        background-image: url(/img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blue-btn {
+        background-color: $blue;
+        color: white;
+    }
+
+    .large-btn {
+        padding: 1rem 2rem;
+        font-weight: 600;
+        margin-left: 10.5%;
+    }
+
+
+    .load-btn {
+        padding: 1rem 2rem;
+        margin: 4rem;
+    }
+  
+
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .content {
+        width: calc(100% / 6);
+      
+        .product {
+          padding: 1rem 0.5rem;
+          position: relative;
+          width: 100%;
+      
+          h4 {
+            font-size: 1rem;
+            position: absolute;
+            color: white;
+            text-transform: uppercase;
+            position: absolute;
+            top: 65%;
+            background-color: #1c1c1c;
+            width: calc(100% - 1rem);
+            height: calc(35% - 1rem);
+          }
+        }
+        
+      }
+  }
 }
