@@ -154,3 +154,81 @@ header .header__menu li .search:hover {
   text-align: center;
 }
 
+.footer {
+  background-image: url(/img/footer-bg.jpg);
+}
+
+.footer__top {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__top .footer-link {
+  height: 90%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: center;
+}
+
+.footer__top .dc-logo {
+  height: 300px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+  display: flex;
+  background-image: url(/img/dc-logo-bg.png);
+}
+
+.footer__top .dc-logo img {
+  width: 400px;
+  align-self: center;
+}
+
+.footer__bottom {
+  height: 100px;
+  background-color: #303030;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__bottom button {
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #303030;
+  border: 2px solid #0282f9;
+}
+
+.footer__bottom .social {
+  display: flex;
+  align-items: center;
+}
+
+.footer__bottom .social .follow-us {
+  color: #0282f9;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.footer__bottom .social .social-icon {
+  color: white;
+  display: inline-block;
+  width: 30px;
+  margin: 0.5rem;
+}
+
+.footer__bottom .social .social-icon img {
+  width: 100%;
+}
+
