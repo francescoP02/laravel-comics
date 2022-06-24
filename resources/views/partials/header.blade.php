@@ -7,20 +7,21 @@
     </section>
     <section class="header container">
         <div class="header__logo">
-          <img src="{{ asset('img/dc-logo.png') }}" alt="" />
+
+            <a href="/"><img src="{{ asset('img/dc-logo.png') }}" alt="" /></a>
         </div>
         <nav>
           <ul class="header__menu">
-            <li>CHARACTERS</li>
-            <li>COMICS</li>
-            <li>MOVIES</li>
-            <li>TV</li>
-            <li>GAMES</li>
-            <li>COLLECTIBLES</li>
-            <li>VIDEOS</li>
-            <li>FANS</li>
-            <li>NEWS</li>
-            <li>SHOP</li>
+            <li><a href="/characters">CHARACTERS</a></li>
+            <li><a href="/comics">COMICS</a></li>
+            <li><a href="/movies">MOVIES</a></li>
+            <li><a href="/tv">TV</a></li>
+            <li><a href="/games">GAMES</a></li>
+            <li><a href="/collectibles">COLLECTIBLES</a></li>
+            <li><a href="/videos">VIDEOS</a></li>
+            <li><a href="/fans">FANS</a></li>
+            <li><a href="/news">NEWS</a></li>
+            <li><a href="/shop">SHOP</a></li>
             <li class="search"><input type="text" name="search" id="search" placeholder="Search"></li>
           </ul>
         </nav>
