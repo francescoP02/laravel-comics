@@ -1,3 +1,58 @@
 //
 @import "partials/_variables";
 @import "partials/_general";
+
+header {
+    .header-top {
+        background-color: $blue;
+        color: #ffffff;
+        text-align: end;
+
+        span {
+            font-size: .8rem;
+            padding: .4rem;
+        }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        justify-content: space-between;
+      
+        &__logo {
+          img {
+            width: 80px;
+            padding: .3rem 0;
+          }
+        }
+      
+        &__menu {
+          display: flex;
+          align-self: center;
+      
+          li {
+            width: calc(100% / 6);
+            margin: 0.5rem;
+            padding: 0.5rem;
+            color: $black;
+            line-height: 50px;
+            font-size: .8rem;
+      
+            &:hover {
+              color: $blue;
+              border-bottom: 5px solid $blue;
+              cursor: pointer;
+            }
+
+            .search {
+
+                &:hover {
+                    border-bottom: 5px solid $blue;
+                    cursor: pointer;
+                }
+            }
+          }
+        }
+    }
+}
