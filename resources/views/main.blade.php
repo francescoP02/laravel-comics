@@ -18,4 +18,7 @@
         <span class="blue-btn load-btn">LOAD MORE</span>
         </div>
   </section>
+  <section class="shop">
+    @include('components.shop')
+  </section>
 @endsection

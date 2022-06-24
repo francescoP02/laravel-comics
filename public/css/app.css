@@ -36,13 +36,12 @@ header .header-top span {
 header .header {
   display: flex;
   flex-direction: row;
-  height: 80px;
   justify-content: space-between;
 }
 
 header .header__logo img {
   width: 80px;
-  padding: 0.3rem 0;
+  margin: 0.3rem 0;
 }
 
 header .header__menu {
@@ -84,6 +83,7 @@ header .header__menu li .search:hover {
 .comics .blue-btn {
   background-color: #0282f9;
   color: white;
+  cursor: pointer;
 }
 
 .comics .large-btn {
@@ -95,6 +95,7 @@ header .header__menu li .search:hover {
 .comics .load-btn {
   padding: 1rem 2rem;
   margin: 4rem;
+  cursor: pointer;
 }
 
 .comics__list {
@@ -104,6 +105,7 @@ header .header__menu li .search:hover {
 
 .comics__list .content {
   width: 16.6666666667%;
+  cursor: pointer;
 }
 
 .comics__list .content .product {
@@ -122,5 +124,33 @@ header .header__menu li .search:hover {
   background-color: #1c1c1c;
   width: calc(100% - 1rem);
   height: calc(35% - 1rem);
+}
+
+.shop {
+  background-color: #0282f9;
+  display: flex;
+}
+
+.shop .container {
+  display: flex;
+}
+
+.shop .container .shop-item {
+  padding: 3rem 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shop .container .shop-item img {
+  width: 20%;
+}
+
+.shop .container .shop-item span {
+  padding-left: 1rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 
