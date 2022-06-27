@@ -5,5 +5,9 @@
 @endsection
 
 @section('main_content')
-    COMICS
+<div class="comics__list">
+    @foreach ($comics as $comic)
+    @include('components.comic-card', $comic)
+    @endforeach
+</div>
 @endsection

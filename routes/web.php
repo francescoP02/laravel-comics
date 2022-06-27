@@ -13,7 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+$menu = config('menu');
+$data = [
+    'menu' => $menu,
+];
+
+Route::get('/', function () use ($data) {
     $comics_array = config('comics');
 
     $comics = [];
@@ -29,42 +34,64 @@ Route::get('/', function () {
     return view('main', $data);
 });
 
-Route::get('/characters', function () {
-    return view('characters');
+Route::get('/characters', function () use ($data) {
+    return view('characters', $data);
 })->name('characters');
 
-Route::get('/comics', function () {
-    return view('comics');
+Route::get('/comics', function () use ($data) {
+
+    $comics = config('comics');
+
+    $comics_collection = collect($comics);
+
+    $data = ['comics' => $comics ];
+
+    return view('comics', $data);
 })->name('comics');
 
-Route::get('/movies', function () {
-    return view('movies');
+Route::get('/comics/{id}', function ($id) use ($data) {
+    $comics = collect(config('comics'));
+    $current_comic = $comics->where('id', $id)->first();
+
+    if (!$current_comic) {
+        return abort(404);
+    }
+
+    $data = array_merge($data, [
+        'comic' => $current_comic
+    ]);
+
+    return view('single-comic', $data);
+})->name('single-comic');
+
+Route::get('/movies', function () use ($data) {
+    return view('movies', $data);
 })->name('movies');
 
-Route::get('/tv', function () {
-    return view('tv');
+Route::get('/tv', function () use ($data) {
+    return view('tv', $data);
 })->name('tv');
 
-Route::get('/games', function () {
-    return view('games');
+Route::get('/games', function () use ($data) {
+    return view('games', $data);
 })->name('games');
 
-Route::get('/collectibles', function () {
-    return view('collectibles');
+Route::get('/collectibles', function () use ($data) {
+    return view('collectibles', $data);
 })->name('collectibles');
 
-Route::get('/videos', function () {
-    return view('videos');
+Route::get('/videos', function () use ($data) {
+    return view('videos', $data);
 })->name('videos');
 
-Route::get('/fans', function () {
-    return view('fans');
+Route::get('/fans', function () use ($data) {
+    return view('fans', $data);
 })->name('fans');
 
-Route::get('/news', function () {
-    return view('news');
+Route::get('/news', function () use ($data) {
+    return view('news', $data);
 })->name('news');
 
-Route::get('/shop', function () {
-    return view('shop');
+Route::get('/shop', function () use ($data) {
+    return view('shop', $data);
 })->name('shop');

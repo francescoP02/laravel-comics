@@ -12,16 +12,16 @@
         </div>
         <nav>
           <ul class="header__menu">
-            <li><a href="/characters">CHARACTERS</a></li>
-            <li><a href="/comics">COMICS</a></li>
-            <li><a href="/movies">MOVIES</a></li>
-            <li><a href="/tv">TV</a></li>
-            <li><a href="/games">GAMES</a></li>
-            <li><a href="/collectibles">COLLECTIBLES</a></li>
-            <li><a href="/videos">VIDEOS</a></li>
-            <li><a href="/fans">FANS</a></li>
-            <li><a href="/news">NEWS</a></li>
-            <li><a href="/shop">SHOP</a></li>
+            <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
+            <li><a href="{{ route('comics') }}">COMICS</a></li>
+            <li><a href="{{ route('movies') }}">MOVIES</a></li>
+            <li><a href="{{ route('tv') }}">TV</a></li>
+            <li><a href="{{ route('games') }}">GAMES</a></li>
+            <li><a href="{{ route('collectibles') }}">COLLECTIBLES</a></li>
+            <li><a href="{{ route('videos') }}">VIDEOS</a></li>
+            <li><a href="{{ route('fans') }}">FANS</a></li>
+            <li><a href="{{ route('news') }}">NEWS</a></li>
+            <li><a href="{{ route('shop') }}">SHOP</a></li>
             <li class="search"><input type="text" name="search" id="search" placeholder="Search"></li>
           </ul>
         </nav>
